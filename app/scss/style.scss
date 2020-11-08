@@ -29,6 +29,7 @@ li {
 }
 
 .header {
+  height: 100vh;
   &__top {
     padding: 0 15px;
     position: relative;
@@ -200,5 +201,75 @@ li {
   }
   &__flex-item {
     margin: 0 5px;
+  }
+  &__content {
+    background: url('../img/header.jpg') no-repeat center/ cover;
+    height: calc(100vh - 81px);
+    padding: 0 15px;
+    @media screen and(max-width:400px) {
+      background-position: 30% 0%;
+    }
+    &-wrapper {
+      min-height: inherit;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: calc(100vh - 81px);
+    }
+    &-flex {
+      display: flex;
+      div {
+        margin: 27px 58px 0 0;
+        width: 147px;
+        height: 35px;
+        background: #22262a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s all ease;
+        @media screen and(max-width:400px) {
+          margin: 27px 20px 0 0;
+        }
+        a {
+          @include font(18px, 500, 27px);
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+          @media screen and(max-width:400px) {
+            @include font(14px, 500, 20px);
+          }
+        }
+        &:hover {
+          background: #fff;
+          transition: 0.3s all ease;
+          a {
+            color: #22262a;
+          }
+        }
+      }
+    }
+  }
+  &__inner {
+    margin-bottom: 10%;
+    overflow: hidden;
+  }
+  &__suptitle {
+    @include font(18px, 500, 27px);
+    text-transform: uppercase;
+    @media screen and(max-width:600px) {
+      @include font(16px, 500, 25px);
+    }
+  }
+  &__title {
+    @include font(80px, 700, 120px);
+    margin: 0;
+    text-transform: uppercase;
+    @media screen and(max-width:600px) {
+      @include font(40px, 700, 70px);
+    }
+  }
+  &__subtitle {
+    @include font(16px, 500, 25px);
+    max-width: 409px;
   }
 }
