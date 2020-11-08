@@ -1,3 +1,9 @@
+window.onload = function(){
+  document.body.style.overflow = 'initial'
+  document.querySelector('.preloader').style.display = 'none';
+}
+
+
 function menuBurger(){
   let burger = document.querySelector('.header__menu-burger');
   let menu = document.querySelector('.header__list');
