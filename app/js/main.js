@@ -5,7 +5,7 @@ function menuBurger(){
   burger.onclick = function(){
     burger.classList.toggle('header__menu-burger--active');
     menu.classList.toggle('header__list--open');
-    document.body.classList.toggle('active')
+    document.body.classList.toggle('hidden')
   }
 }
 
