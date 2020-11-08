@@ -10,3 +10,8 @@ function menuBurger(){
 }
 
 menuBurger()
+
+
+document.querySelector('.footer__top-form').onsubmit = function(e){
+  e.preventDefault()
+}
