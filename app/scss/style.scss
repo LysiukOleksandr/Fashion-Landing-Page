@@ -159,6 +159,9 @@ li {
       a {
         @include font(18px, 400, 27px);
       }
+      @media screen and(max-width:800px) {
+        padding: 0 8px;
+      }
       @media screen and(max-width:768px) {
         padding: 10px 0;
         width: 100%;
@@ -168,6 +171,7 @@ li {
           background: white;
         }
       }
+
       @media screen and(max-width:400px) {
         padding: 5px 0;
         a {
@@ -253,6 +257,12 @@ li {
   &__inner {
     margin-bottom: 10%;
     overflow: hidden;
+    @media screen and(max-width:1000px) {
+      margin-bottom: 5%;
+    }
+    @media screen and(max-width:650px) {
+      margin-bottom: 10%;
+    }
   }
   &__suptitle {
     @include font(18px, 500, 27px);
@@ -494,6 +504,99 @@ li {
       @include font(15px, 400, 22.5px);
       color: rgb(223, 22, 22);
       margin-left: 40px;
+    }
+  }
+}
+
+// styles
+
+.styles {
+  padding: 120px 15px 100px 15px;
+  overflow: hidden;
+  @media screen and(max-width:400px) {
+    padding: 30px 15px 100px 15px;
+  }
+
+  &__body {
+    display: flex;
+    margin-top: 65px;
+    @media screen and(max-width:600px) {
+      flex-direction: column;
+      margin-top: 0px;
+    }
+    &-left {
+      max-width: 550px;
+      max-height: 602px;
+      margin-right: 30px;
+      margin-top: 85px;
+      @media screen and(max-width:600px) {
+        max-width: 300px;
+        min-width: 290px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      @media screen and(max-width:700px) {
+        margin-right: 15px;
+      }
+    }
+    &-right {
+      max-width: 514px;
+      max-height: 450px;
+      @media screen and(max-width:600px) {
+        max-width: 300px;
+        align-self: flex-end;
+      }
+    }
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    &-text {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      max-width: 169px;
+      @include font(15px, 400, 22.5px);
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #22262a;
+      @media screen and(max-width:1100px) {
+        top: 100px;
+        left: 20px;
+      }
+      @media screen and(max-width:850px) {
+        top: 190px;
+        left: 20px;
+      }
+      @media screen and(max-width:600px) {
+        top: 5px;
+        left: 0px;
+        font-size: 12px;
+      }
+    }
+    &-img {
+      position: absolute;
+      right: -18px;
+      top: -65px;
+      max-width: 227px;
+      height: auto;
+      box-shadow: 0px 0px 0px 25px #fff;
+      @media screen and(max-width:1100px) {
+        max-width: 180px;
+      }
+      @media screen and(max-width:600px) {
+        top: -80px;
+        right: -15px;
+        width: 130px;
+        box-shadow: 0px 0px 0px 15px #fff;
+      }
     }
   }
 }
