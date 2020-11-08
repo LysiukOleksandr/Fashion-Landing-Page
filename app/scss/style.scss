@@ -443,3 +443,57 @@ li {
     }
   }
 }
+
+// mens
+
+.mens {
+  padding: 120px 15px 50px 15px;
+  @media screen and(max-width:400px) {
+    padding: 30px 15px 30px 15px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 268px));
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 65px auto 0 auto;
+    justify-content: center;
+    @media screen and(max-width:400px) {
+      row-gap: 30px;
+    }
+  }
+  &__item {
+    &-img {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    &-info {
+      margin-top: 38px;
+    }
+    &-title {
+      @include font(15px, 300, 22.5px);
+      text-transform: uppercase;
+    }
+    &-name {
+      @include font(15px, 600, 22.5px);
+      text-transform: uppercase;
+      max-width: 225px;
+    }
+    &-flex {
+      display: flex;
+    }
+    &-del {
+      @include font(15px, 400, 22.5px);
+    }
+    &-price {
+      @include font(15px, 400, 22.5px);
+      color: rgb(223, 22, 22);
+      margin-left: 40px;
+    }
+  }
+}
