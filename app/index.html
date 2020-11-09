@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
     <title>Fashion Landing</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -15,7 +20,7 @@
    <div class="preloader">
      <img src="./img/preloader.gif" alt="preloader">
    </div>
-    <div class="header">
+    <div class="header" id="home">
       <div class="container">
         <div class="header__top">
           <div class="header__logo">
@@ -36,12 +41,12 @@
           </div>
           <nav class="header__menu">
             <ul class="header__list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Lookbook</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#gallery">Shop</a></li>
+              <li><a href="#womens">Lookbook</a></li>
+              <li><a href="#mens">Features</a></li>
+              <li><a href="#styles">Pages</a></li>
+              <li><a href="#collection">Blog</a></li>
             </ul>
             <div class="header__menu-burger">
               <span></span>
@@ -111,7 +116,7 @@
                 </g>
               </svg>
             </div>
-            <div class="header__flex-item">
+            <div class="header__flex-item ">
               <svg
                 width="20px"
                 height="20px"
@@ -149,7 +154,7 @@
         </div>
       </div>
     </div>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <div class="gallery__wrapper">
           <div class="gallery__item gallery__item-1">
@@ -179,7 +184,7 @@
         </div>
       </div>
     </section>
-    <section class="womens">
+    <section class="womens" id="womens">
       <div class="container">
         <div class="womens__wrapper">
           <h2 class="womens__title title">Women's fashion</h2>
@@ -244,7 +249,7 @@
       </div>
     </section>
 
-    <section class="mens">
+    <section class="mens" id="mens">
       <div class="container">
         <div class="mens__wrapper">
           <h2 class="mens__title title">Women's fashion</h2>
@@ -309,7 +314,7 @@
       </div>
     </section>
 
-    <section class="styles">
+    <section class="styles" id="styles">
       <div class="container">
         <div class="styles__wrapper">
           <h2 class="styles__title title">Avone styles</h2>
@@ -338,7 +343,7 @@
       </div>
     </section>
 
-    <section class="collection">
+    <section class="collection" id="collection">
       <div class="container">
         <div class="collection__wrapper">
           <div class="collection__inner">
@@ -551,7 +556,7 @@
           </div>
         </div>
     </footer>
-
+    <script src="./WOW-master//dist/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
